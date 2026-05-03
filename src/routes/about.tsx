@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Reveal } from "@/components/Reveal";
 import { Marquee } from "@/components/Marquee";
-import g1 from "@/assets/g1.jpg";
+import l4 from "@/assets/l4.png";
 import g3 from "@/assets/g3.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -53,7 +53,7 @@ function AboutPage() {
         <div className="mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
           <Reveal direction="left">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
-              <img src={g1} alt="Atelier" className="h-full w-full object-cover" loading="lazy" />
+              <img src={l4} alt="Atelier" className="h-full w-full object-cover" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-tr from-[var(--gold)]/30 to-transparent" />
             </div>
           </Reveal>

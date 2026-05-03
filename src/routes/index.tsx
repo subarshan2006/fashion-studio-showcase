@@ -9,6 +9,9 @@ import { Counter } from "@/components/Counter";
 import hero from "@/assets/hero.jpg";
 import g3 from "@/assets/g3.jpg";
 import g8 from "@/assets/g8.jpg";
+import l1 from "@/assets/l1.png";
+import l2 from "@/assets/l2.png";
+import l3 from "@/assets/l3.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,10 +117,10 @@ function HomePage() {
       <section className="py-16 md:py-24 bg-[var(--beige)]/30">
         <div className="mx-auto max-w-6xl px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { v: 1200, s: "+", l: "Students" },
+            { v: 120, s: "+", l: "Students" },
             { v: 25, s: "+", l: "Years" },
             { v: 50, s: "+", l: "Awards" },
-            { v: 30, s: "+", l: "Course Modules" },
+            { v: 10, s: "+", l: "Course Modules" },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.1} direction="up">
               <div className="font-display text-5xl md:text-6xl gold-text">
@@ -167,7 +170,7 @@ function HomePage() {
             <h2 className="mt-4 font-display text-5xl">Scroll the <em className="gold-text not-italic">journey</em></h2>
           </div>
           <motion.div style={{ x }} className="flex gap-6 pl-[28rem] pr-20">
-            {[g3, g8, hero, g3, g8].map((src, i) => (
+            {[g3, l1 ,g8,l3, l2].map((src, i) => (
               <div key={i} className="relative h-[70vh] w-[55vw] flex-shrink-0 rounded-3xl overflow-hidden">
                 <img src={src} alt="" className="h-full w-full object-cover" />
                 <div className="absolute bottom-6 left-6 font-display text-3xl">Chapter {i + 1}</div>
