@@ -5,6 +5,7 @@ import { MapPin, Phone, Mail, Send, Instagram, Facebook, Youtube, Check } from "
 import { PageLayout } from "@/components/PageLayout";
 import { Reveal } from "@/components/Reveal";
 
+
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -20,11 +21,29 @@ function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
 
   const submit = (e: FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
-    setForm({ name: "", email: "", phone: "", message: "" });
-  };
+  e.preventDefault();
+
+  // 📌 Create WhatsApp message
+  const text = `*New Enquiry - Sri Dev Fashion Academy*
+------------------------------
+👤 Name: ${form.name}
+📧 Email: ${form.email}
+📱 Phone: ${form.phone}
+💬 Message: ${form.message}`;
+
+  const phoneNumber = "919344251898";// country code + number
+
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+  // ✅ Redirect to WhatsApp
+  window.open(whatsappURL, "_blank");
+
+
+  // (Optional UI feedback - keep your existing behavior)
+  setSent(true);
+  setTimeout(() => setSent(false), 4000);
+  setForm({ name: "", email: "", phone: "", message: "" });
+};
 
   return (
     <PageLayout>

@@ -18,11 +18,11 @@ export const Route = createFileRoute("/about")({
 });
 
 const timeline = [
-  { year: "2000", title: "Atelier Founded", text: "Began as a small couture studio in Gandhipuram." },
-  { year: "2008", title: "Academy Opens", text: "Formal training programs launched for aspiring designers." },
-  { year: "2015", title: "Industry Recognition", text: "First batch of master couturiers placed in luxury houses." },
-  { year: "2020", title: "Heritage Handwork", text: "Specialised handwork curriculum introduced." },
-  { year: "2024", title: "1,200+ Alumnae", text: "A growing community of designers across South India." },
+  { year: "2014", title: "Education Journey", text: "Started degree in fashion and design, building the foundation for a creative career." },
+  { year: "2015", title: "First Tailor Shop", text: "Opened a small tailoring shop named 'Sree Start', serving local customers." },
+  { year: "2020", title: "Teaching Milestone", text: "Trained and mentored over 250+ students in tailoring and design skills." },
+  { year: "2023", title: "Boutique Launch", text: "Expanded into a boutique shop, offering customized fashion and designer wear." },
+  { year: "2025", title: "Sri Dev Academy", text: "Established a grand fashion institution 'Sri Dev Academy' to shape future designers." },
 ];
 
 function AboutPage() {
@@ -38,13 +38,13 @@ function AboutPage() {
             <span className="section-eyebrow">Our Story</span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="mt-6 font-display text-5xl md:text-7xl">A legacy <em className="gold-text not-italic">stitched</em> in time</h1>
+            <h1 className="mt-6 font-display text-5xl md:text-7xl">B KAVITHA & M BHANUMATHI <em className="gold-text not-italic">Founder of </em>SRI DEV FASHION ACADEMY</h1>
           </Reveal>
-          <Reveal delay={0.2}>
+          {/* <Reveal delay={0.2}>
             <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
               For over two decades, Sri Dev Fashion Academy has shaped India's most discerning designers. We blend heritage handwork with contemporary couture — a place where ambition meets artistry.
             </p>
-          </Reveal>
+          </Reveal> */}
         </div>
       </section>
 
@@ -58,19 +58,19 @@ function AboutPage() {
             </div>
           </Reveal>
           <Reveal direction="right">
-            <span className="section-eyebrow">The Atelier</span>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl">Where every thread tells a story.</h2>
+            <span className="section-eyebrow">The Founders</span>
+            <h2 className="mt-4 font-display text-4xl md:text-3xl">SRI DEV FASHION ACADEMY is an emerging centre of excellence.</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Located on 2nd Street, Gandhipuram, our studio is a sanctuary for craft. Mentors with decades of couture experience guide students through every detail — from the first sketch to the final finishing.
+              In fashion education, located in the heart of Coimbatore. Our academy is committed to transforming passionate individuals into confident, industry-ready fashion professionals.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
                 <div className="font-display text-3xl gold-text">Vision</div>
-                <p className="mt-2 text-sm text-muted-foreground">To be South India's most respected academy for fashion craftsmanship.</p>
+                <p className="mt-2 text-sm text-muted-foreground">To create life-changing opportunities through fashion education and empower every learner to design their own future with dignity and confidence.</p>
               </div>
               <div>
                 <div className="font-display text-3xl gold-text">Mission</div>
-                <p className="mt-2 text-sm text-muted-foreground">Nurture every student into a confident, career-ready designer.</p>
+                <p className="mt-2 text-sm text-muted-foreground">To provide an accessible, innovative, and supportive learning platform where students can Earn after completing the courses, building financial independence and real-time experience during their training period..</p>
               </div>
             </div>
           </Reveal>

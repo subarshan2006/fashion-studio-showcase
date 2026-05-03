@@ -26,9 +26,9 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { icon: Scissors, title: "Couture Blouse", desc: "Master 20+ silhouettes from princess cuts to katori." },
-  { icon: Sparkles, title: "Hand Embroidery", desc: "Hook, loop, zardosi — heritage handwork techniques." },
-  { icon: Award, title: "Industry Diploma", desc: "Career-ready certification recognised across the industry." },
+  { icon: Scissors, title: "Women’s Couture Design", desc: "Explore 20+ blouse and garment silhouettes — from timeless princess cuts to contemporary katori styles." },
+  { icon: Sparkles, title: "Art of hand Embroidery", desc: "Master intricate techniques like hook work, loop detailing, and zardosi — crafted for women’s fashion excellence." },
+  { icon: Award, title: "Professional Fashion Diploma", desc: "Career-ready certification empowering women to thrive in the fashion industry." },
 ];
 
 const testimonials = [
@@ -138,7 +138,7 @@ function HomePage() {
           <Reveal>
             <div className="text-center max-w-2xl mx-auto">
               <span className="section-eyebrow">Featured Programs</span>
-              <h2 className="mt-5 font-display text-4xl md:text-6xl">Curated for the <em className="gold-text not-italic">connoisseur</em></h2>
+              <h2 className="mt-5 font-display text-4xl md:text-6xl">Curated for the <em className="gold-text not-italic">Modern Woman</em></h2>
               <p className="mt-4 text-muted-foreground">Three pillars of mastery — meticulously taught, beautifully executed.</p>
             </div>
           </Reveal>
