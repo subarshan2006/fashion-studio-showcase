@@ -1,7 +1,8 @@
-@import "tailwindcss" source(none);
-@source "../src";
+/* MUST be at top */
+@import "tailwindcss";
 @import "tw-animate-css";
 
+/* THEN other things */
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
