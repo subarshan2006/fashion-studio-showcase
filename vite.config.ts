@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  base: "./",   // use relative paths so GitHub Pages serves assets correctly
+  base: "/fashion-studio-showcase/",   // ✅ MUST be this
   plugins: [react()],
   resolve: {
     alias: {
