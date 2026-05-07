@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite"; // ✅ ADD THIS
 import path from "path";
 
 export default defineConfig({
-  base: "/fashion-studio-showcase/",
+  base: "/",
   plugins: [
     react(),
     tailwindcss(), // ✅ ADD THIS

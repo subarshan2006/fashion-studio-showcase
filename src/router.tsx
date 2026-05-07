@@ -59,7 +59,6 @@ export const getRouter = () => {
     routeTree,
     context: {},
     scrollRestoration: true,
-    basepath: "/fashion-studio-showcase", // ✅ ADD THIS
     defaultPreloadStaleTime: 0,
     defaultErrorComponent: DefaultErrorComponent,
   });
